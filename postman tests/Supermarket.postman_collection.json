@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "462409ef-4415-4079-84e2-09c3a38dd6c4",
+		"name": "Supermarket",
+		"description": "supermarket PFE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "All Clients",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"djamal@a.com\",\n\t\"password\": \"123456\",\n\t\"type\": \"admin\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:9090/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Client",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"fullName\": \"imane bekhiekh\",\n\t\"address\": \"imane bekhiekh address\",\n\t\"phone\": \"0657696373\",\n\t\"age\": 18,\n\t\"email\": \"imane@c.com\",\n\t\"password\": \"123456\",\n\t\"sex\": \"FEMALE\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:9090/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Client",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 2,\n\t\"fullname\": \"imane bekhiekh 2\",\n\t\"address\": \"imane bekhiekh address 2\",\n\t\"phone\": \"06576963732\",\n\t\"age\": 225,\n\t\"email\": \"imane2@c.com\",\n\t\"password\": \"1234562\",\n\t\"sex\": \"FEMALE\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:9090/clients/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"clients",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Client",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 2,\n\t\"fullname\": \"imane bekhiekh 2\",\n\t\"address\": \"imane bekhiekh address 2\",\n\t\"phone\": \"06576963732\",\n\t\"age\": 225,\n\t\"email\": \"imane2@c.com\",\n\t\"password\": \"1234562\",\n\t\"sex\": \"FEMALE\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:9090/clients/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"clients",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Client",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{auth}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 2,\n\t\"fullname\": \"imane bekhiekh 2\",\n\t\"address\": \"imane bekhiekh address 2\",\n\t\"phone\": \"06576963732\",\n\t\"age\": 225,\n\t\"email\": \"imane2@c.com\",\n\t\"password\": \"1234562\",\n\t\"sex\": \"FEMALE\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:9090/clients/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"clients",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
