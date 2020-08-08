@@ -6,25 +6,46 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="categories" />
         <module name="clients" />
+        <module name="clientUI" />
+        <module name="cloning" />
+        <module name="command" />
+        <module name="control" />
         <module name="discovery" />
         <module name="employees" />
+        <module name="orders" />
         <module name="products" />
+        <module name="test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="categories" target="1.8" />
       <module name="clients" target="1.8" />
+      <module name="clientUI" target="1.8" />
+      <module name="cloning" target="1.8" />
+      <module name="command" target="1.8" />
+      <module name="control" target="1.8" />
       <module name="discovery" target="1.8" />
       <module name="employees" target="1.8" />
+      <module name="orders" target="1.8" />
       <module name="products" target="1.8" />
+      <module name="test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="categories" options="-parameters" />
+      <module name="clientUI" options="-parameters" />
       <module name="clients" options="-parameters" />
+      <module name="cloning" options="-parameters" />
+      <module name="command" options="-parameters" />
+      <module name="control" options="-parameters" />
       <module name="discovery" options="-parameters" />
       <module name="employees" options="-parameters" />
+      <module name="orders" options="-parameters" />
       <module name="products" options="-parameters" />
+      <module name="test" options="-parameters" />
     </option>
   </component>
 </project>

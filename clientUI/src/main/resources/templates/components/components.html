@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="site-section" th:fragment="productsList">
+    <div class="container">
+        <div class="row">
+            <div class="title-section mb-5 col-12">
+                <h2 class="text-uppercase">Products</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div th:each="product : ${products}"  class="col-lg-4 col-md-6 item-entry mb-4">
+                <a href="#" class="product-item md-height bg-gray d-block">
+                    <img th:src="${product.image}" alt="Image" class="img-fluid">
+                </a>
+                <h2 class="item-title"><a href="#" th:text="${product.name}"></a></h2>
+                <strong th:text="${product.price}" class="item-price"></strong>
+                <!--<a class="float-right">-->
+                    <!--<span class="icon-add_shopping_cart"></span>-->
+                <!--</a>-->
+
+                <form th:action="@{/cart}" method="post" class="float-right add-to-cart">
+                    <!--<input type="text" hidden th:field="*{id}" th:value="${product.id}"/>-->
+                    <!--<input type="text" hidden th:field="*{name}" th:value="${product.name}"/>-->
+                    <!--<input type="text" hidden th:field="*{image}" th:value="${product.image}"/>-->
+                    <!--<input type="text" hidden th:field="*{price}" th:value="${product.price}"/>-->
+                    <input type="text" hidden th:value="${product.id}" name="id"/>
+                    <button class="icons-btn d-inline-block bag">
+                        <span class="icon-add_shopping_cart"></span>
+                    </button>
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="site-section"  th:fragment="categoriesList">
+    <div class="container">
+        <div class="title-section mb-5">
+            <h2 class="text-uppercase"><span class="d-block">Discover</span> The Collections</h2>
+        </div>
+        <div class="row align-items-stretch">
+            <div class="col-lg-4" th:each="category : ${categories}">
+                <div class="product-item category-item sm-height bg-gray">
+                    <a href="#" class="product-category" th:href="${'/catalogue/'+category.id}" th:text="${category.title}"><span>25 items</span></a>
+                    <img th:src="${category.image}" alt="Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

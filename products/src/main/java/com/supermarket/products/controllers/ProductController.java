@@ -1,13 +1,13 @@
 package com.supermarket.products.controllers;
 
 
-import com.supermarket.products.dao.CategoryDao;
+
 import com.supermarket.products.dao.ProductDao;
 import com.supermarket.products.models.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import sun.rmi.runtime.Log;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,9 +17,6 @@ public class ProductController {
 
     @Autowired
     private ProductDao productDao;
-
-//    @Autowired
-//    private CategoryDao categoryDao;
 
     @GetMapping(value = "products")
     public List<Product> allProducts() {
@@ -31,6 +28,12 @@ public class ProductController {
     public Product show(@PathVariable("id") int id) {
 
         return productDao.findById(id);
+    }
+
+    @GetMapping(value = "category/products/{id}")
+    public List<Product> categoryProducts(@PathVariable("id") String id) {
+        id = "-" + id + "-";
+        return productDao.findByCategoriesContains(id);
     }
 
     @PostMapping(value = "products/search")

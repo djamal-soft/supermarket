@@ -12,5 +12,6 @@ public interface ProductDao extends JpaRepository<Product, Integer> {
 
     Product findById(int id);
     List<Product> findAll();
+    List<Product> findByCategoriesContains(String id);
     void deleteById(int id);
 }

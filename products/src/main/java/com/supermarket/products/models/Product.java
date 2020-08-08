@@ -1,7 +1,6 @@
 package com.supermarket.products.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;
@@ -22,13 +21,11 @@ public class Product {
     @Min(value = 1, message = "le prix doit etre superieur a 1")
     private int price;
 
-    @JsonIgnoreProperties("products")
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
-    @JoinTable(name = "product_categories",
-            joinColumns = @JoinColumn(name = "category_id", referencedColumnName = "id"),
-    inverseJoinColumns = @JoinColumn(name = "product_id", referencedColumnName = "id")
-    )
-    private List<Category> categories;
+    @NotBlank(message = "l'image est requis")
+    private String image;
+
+    @NotBlank(message = "categories est requis")
+    private String categories;
 
     public Product() {
     }
@@ -57,13 +54,30 @@ public class Product {
         this.price = price;
     }
 
-    public List<Category> getCategories() {
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getCategories() {
         return categories;
     }
 
-    public void setCategories(List<Category> categories) {
+    public void setCategories(String categories) {
         this.categories = categories;
     }
 
-
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", image='" + image + '\'' +
+                ", categories='" + categories + '\'' +
+                '}';
+    }
 }

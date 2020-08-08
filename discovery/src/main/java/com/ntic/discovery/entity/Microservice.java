@@ -3,7 +3,7 @@ package com.ntic.discovery.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "microservices", uniqueConstraints={@UniqueConstraint(columnNames = {"address", "version"})})
+@Table(name = "microservices", uniqueConstraints={@UniqueConstraint(columnNames = {"mkeys", "version"})})
 public class Microservice {
 
     @Id

@@ -1,7 +1,6 @@
-package com.supermarket.products.dao;
+package com.supermarket.categories.dao;
 
-
-import com.supermarket.products.models.Category;
+import com.supermarket.categories.models.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

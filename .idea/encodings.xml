@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/categories" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/clientUI" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/clients" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloning" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/command" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/control" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/discovery" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/employees" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orders" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/products" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test" charset="UTF-8" />
   </component>
 </project>
