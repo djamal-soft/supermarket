@@ -2,8 +2,8 @@ package com.supermarket.clientUI.proxies;
 
 
 import com.supermarket.clientUI.models.Product;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 
@@ -17,28 +17,26 @@ public class ProductProxy {
                 .setServiceKey("product-management")
                 .setServiceVersion(-1);
 
-        return (ArrayList<Product>) handler.handleGetRequest();
+        return (ArrayList<Product>) handler.handle();
     }
 
     public ArrayList<Product> productsByCategory(String categoryId) {
-
         RequestHandler handler = new RequestHandler();
         handler.setResponseType(ArrayList.class)
                 .setServiceKey("category-products")
                 .setServiceVersion(-1)
                 .setAdditionnelParamsToUrl(categoryId);
 
-        return (ArrayList<Product>) handler.handleGetRequest();
+        return (ArrayList<Product>) handler.handle();
     }
 
     public Product productById(int id) {
-
         RequestHandler handler = new RequestHandler();
         handler.setResponseType(Product.class)
                 .setServiceKey("product-management")
                 .setServiceVersion(-1)
                 .setAdditionnelParamsToUrl(id+"");
 
-        return (Product) handler.handleGetRequest();
+        return (Product) handler.handle();
     }
 }

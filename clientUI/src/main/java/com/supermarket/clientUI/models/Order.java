@@ -1,32 +1,19 @@
-package com.supermarket.orders.models;
+package com.supermarket.clientUI.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.sun.istack.NotNull;
-import com.supermarket.orders.enums.OrderStatus;
-import org.hibernate.annotations.ColumnDefault;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
-import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
-@Entity
-@Table(name = "Orders")
 public class Order {
 
-    @Id
-    @GeneratedValue
     private int id;
     private int clientId;
     private String address;
-
-    @Temporal(TemporalType.DATE)
     private Date orderDate;
+    private String status;
 
-    @Enumerated(value = EnumType.STRING)
-    private OrderStatus status = OrderStatus.PENDING;
-
-    @JsonIgnoreProperties("order")
-    @OneToMany(mappedBy = "order")
+    @JsonDeserialize
     private List<OrderDetails> orderDetails;
 
     public int getId() {
@@ -61,11 +48,11 @@ public class Order {
         this.orderDate = orderDate;
     }
 
-    public OrderStatus getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(OrderStatus status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
@@ -77,10 +64,30 @@ public class Order {
         this.orderDetails = orderDetails;
     }
 
+    public int nbProducts() {
+
+        int nb = 0;
+
+        for(OrderDetails details: orderDetails) {
+            nb += details.getQuantity();
+        }
+        return nb;
+    }
+
+    public int totalPrice() {
+        int total = 0;
+
+        for(OrderDetails details: orderDetails) {
+            total += (details.getQuantity() * details.getProduct().getPrice());
+        }
+        return total;
+    }
+
     @Override
     public String toString() {
         return "Order{" +
                 "id=" + id +
+                ", clientId=" + clientId +
                 ", address='" + address + '\'' +
                 ", orderDate=" + orderDate +
                 ", status='" + status + '\'' +

@@ -32,6 +32,16 @@ public class ClientController {
         return client;
     }
 
+    @GetMapping(value = "clientbyemail/{email}")
+    public Client show(@PathVariable("email") String email) {
+
+        Client client = dao.findByEmail(email);
+
+        if (client == null) throw new ClientNotFoundException();
+
+        return client;
+    }
+
     @PostMapping(value = "clients")
     @ResponseStatus(HttpStatus.CREATED)
     public Client store(@Valid @RequestBody Client client) {

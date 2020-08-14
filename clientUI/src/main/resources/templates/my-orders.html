@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="components/master :: head"></head>
+<body>
+
+<div class="site-wrap">
+
+
+  <div th:replace="components/master :: navbar"></div>
+
+
+  <div class="site-section">
+    <div class="container">
+      <div class="row mb-5">
+        <form class="col-md-12" method="post">
+          <div class="site-blocks-table">
+            <table class="table table-bordered">
+              <thead>
+              <tr>
+                <th class="product-thumbnail">#</th>
+                <th class="product-name">Order Date</th>
+                <th class="product-quantity">nb products</th>
+                <th class="product-price">Totale Price</th>
+                <th class="product-price">Status</th>
+                <th class="product-remove">Remove</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr th:each="order : ${orders}" th:id="${order.id}">
+                <!--<td class="product-thumbnail">-->
+                  <!--<img th:src="${item.getProduct().image}" alt="Image" class="img-fluid">-->
+                <!--</td>-->
+                <td class="product-name">
+                  <h2 class="h5 text-black" th:text="${order.id}"></h2>
+                </td>
+                <td th:text="${#dates.format(order.orderDate, 'dd-MMM-yyyy')}"></td>
+                <td th:text="${order.nbProducts()}"></td>
+                <td th:text="${order.totalPrice()+' DZD'}"></td>
+                <td>
+                  <span class="badge"
+                        th:text="|${order.status == 'PENDING' ? 'Pending' : ''} ${order.status == 'IN_PROGRESS' ? 'In progress' : ''} ${order.status == 'FINISHED' ? 'Finished' : ''} ${order.status == 'REFUSED' ? 'Refused' : ''}|"
+                        th:classappend="|${order.status == 'PENDING' ? ' badge-warning' : ''} ${order.status == 'IN_PROGRESS' ? 'badge-dark' : ''} ${order.status == 'FINISHED' ? 'badge-success' : ''} ${order.status == 'REFUSED' ? 'badge-danger' : ''}|"></span>
+                </td>
+                <!--<td>-->
+                  <!--<div class="input-group mb-3" style="max-width: 120px;">-->
+                    <!--<div class="input-group-prepend">-->
+                      <!--<button  th:attr="data-id=${item.getProduct().getId()}" class="decrease btn btn-outline-primary js-btn-minus" type="button">&minus;</button>-->
+                    <!--</div>-->
+                    <!--<input  th:value="${item.getQuantity()}" type="text" class="form-control text-center" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">-->
+                    <!--<div class="input-group-append">-->
+                      <!--<button th:attr="data-id=${item.getProduct().getId()}" class="increase btn btn-outline-primary js-btn-plus" type="button">&plus;</button>-->
+                    <!--</div>-->
+                  <!--</div>-->
+
+                <!--</td>-->
+                <!--<td th:text="${(item.getProduct().price * item.getQuantity())+ ' DZD'}">$49.00</td>-->
+                <td><a href="#" th:if="${order.status == 'PENDING'}" th:attr="data-id=${order.id}" class="remove btn btn-primary height-auto btn-sm">X</a></td>
+              </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer th:replace="components/master :: footer"></footer>
+</div>
+
+<div th:replace="components/master :: scripts"></div>
+
+<script>
+
+  // remove product from shopping cart
+  $('.remove').click(function () {
+
+      var id = $(this).data('id');
+      sendRequest(id, 'DELETE');
+
+      // remove product row from table
+      //$('#' + id).remove();
+      document.location.reload();
+  });
+
+  /**
+   * send request to backend
+   * @param id
+   * @param method
+   */
+  function sendRequest(id, method) {
+      $.ajax('/my-orders', {
+          type: method,  // http method
+          data: { id:  id},  // data to submit
+          success: function (data, status, xhr) {
+              document.location.reload();
+          },
+          error: function (jqXhr, textStatus, errorMessage) {
+              document.location.reload();
+          }
+      });
+  }
+</script>
+
+</body>
+</html>

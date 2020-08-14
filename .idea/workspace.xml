@@ -2,125 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c82d40cc-7b79-44e6-9d4c-b562cfa56f10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_37.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_37.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_18_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_core_2_3_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_jdbc_2_3_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/categories/src/main/java/com/supermarket/categories/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/categories/src/main/java/com/supermarket/categories/controllers/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/categories/src/main/java/com/supermarket/categories/dao/CategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/categories/src/main/java/com/supermarket/categories/exceptions/CategoryNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/categories/src/main/java/com/supermarket/categories/models/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/categories/src/main/java/com/supermarket/categories/models/Microservice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/CatalogueController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/ShoppingCartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/enums/Urls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/CartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/Microservice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/CategoryProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/DiscoveryProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/ProductProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/RequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/resources/static/images/catalogue-pana.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/resources/static/images/online-Groceries-amico.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/resources/static/images/products1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/resources/templates/catalogue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/resources/templates/categoryProducts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/resources/templates/components/components.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/resources/templates/components/master.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientUI/src/main/resources/templates/shoppingCart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloning/src/main/java/com/ntic/cloning/CloningController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloning/src/main/java/com/ntic/cloning/dto/NewServiceDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloning/src/main/java/com/ntic/cloning/models/AwaitedItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloning/src/main/java/com/ntic/cloning/models/Microservice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/control/src/main/java/com/ntic/control/controllers/FlowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/control/src/main/java/com/ntic/control/dto/AwaitedItemDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/control/src/main/java/com/ntic/control/dto/NewServiceDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/control/src/main/java/com/ntic/control/models/AwaitedItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/control/src/main/java/com/ntic/control/models/Microservice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/control/src/main/java/com/ntic/control/observerPattren/IObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/control/src/main/java/com/ntic/control/observerPattren/IPublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/control/src/main/java/com/ntic/control/observerPattren/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/control/src/main/java/com/ntic/control/observerPattren/Publisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/controllers/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/dao/OrderDetailsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/models/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/models/OrderDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/proxies/ProductProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/requestHandler/DiscoveryProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/requestHandler/Microservice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/requestHandler/RequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/models/Microservice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/models/MicroserviceInfos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/example/test/controllers/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/example/test/models/ServiceInfos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_3_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_springsecurity5_3_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/auth/ApplicationUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/auth/ApplicationUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/configurations/ApplicationSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/configurations/PasswordConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/MyOrdersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/OrderDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/ClientProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/OrderProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/resources/templates/loginold.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/resources/templates/my-orders.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientUI/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/models/Microservice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/enums/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/example/test/auth/ApplicationUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/example/test/auth/ApplicationUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/example/test/auth/AuthenticationSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/example/test/auth/PasswordConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/example/test/models/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery/src/main/java/com/ntic/discovery/controllers/MsCommandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery/src/main/java/com/ntic/discovery/controllers/MsCommandController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery/src/main/java/com/ntic/discovery/entity/Microservice.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery/src/main/java/com/ntic/discovery/entity/Microservice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/ProductsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/ProductsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/controllers/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/dao/CategoryDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/dao/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/models/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/models/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/products/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientUI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clientUI/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/CategoryProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/CategoryProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/ProductProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/ProductProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/RequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientUI/src/main/resources/static/scss/bootstrap/_breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/clientUI/src/main/resources/static/scss/bootstrap/_breadcrumb.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientUI/src/main/resources/templates/components/master.html" beforeDir="false" afterPath="$PROJECT_DIR$/clientUI/src/main/resources/templates/components/master.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientUI/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clientUI/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientUI/src/main/resources/templates/shoppingCart.html" beforeDir="false" afterPath="$PROJECT_DIR$/clientUI/src/main/resources/templates/shoppingCart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/ClientsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/ClientsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/controllers/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/controllers/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/dao/ClientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/dao/ClientDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/OrdersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/OrdersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/controllers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/models/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/com/example/test/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/com/example/test/TestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/com/example/test/controllers/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/com/example/test/controllers/TestController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/clients/target/" />
     <ignored path="$PROJECT_DIR$/products/target/" />
@@ -143,141 +79,105 @@
     <session id="-529352973">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="28" />
+          <entry key="project.closed" value="37" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.110" value="1" />
           <entry key="project.open.time.116" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.60" value="2" />
-          <entry key="project.open.time.61" value="1" />
+          <entry key="project.open.time.61" value="2" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.64" value="2" />
-          <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.65" value="2" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.67" value="2" />
-          <entry key="project.open.time.68" value="1" />
-          <entry key="project.open.time.69" value="1" />
+          <entry key="project.open.time.68" value="2" />
+          <entry key="project.open.time.69" value="4" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.75" value="1" />
-          <entry key="project.open.time.78" value="1" />
+          <entry key="project.open.time.78" value="2" />
+          <entry key="project.open.time.79" value="1" />
+          <entry key="project.open.time.82" value="1" />
           <entry key="project.open.time.89" value="1" />
           <entry key="project.open.time.91" value="1" />
           <entry key="project.open.time.93" value="1" />
           <entry key="project.open.time.94" value="1" />
-          <entry key="project.opened" value="28" />
+          <entry key="project.opened" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="4" />
+          <entry key="class" value="5" />
           <entry key="css" value="1" />
-          <entry key="html" value="20" />
-          <entry key="java" value="175" />
-          <entry key="properties" value="29" />
-          <entry key="xml" value="27" />
+          <entry key="html" value="34" />
+          <entry key="java" value="260" />
+          <entry key="properties" value="31" />
+          <entry key="xml" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="4" />
+          <entry key="CLASS" value="5" />
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="20" />
-          <entry key="JAVA" value="175" />
-          <entry key="Properties" value="29" />
-          <entry key="XML" value="27" />
+          <entry key="HTML" value="34" />
+          <entry key="JAVA" value="260" />
+          <entry key="Properties" value="31" />
+          <entry key="XML" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="24" />
-          <entry key="dummy" value="49" />
-          <entry key="html" value="1138" />
-          <entry key="java" value="11488" />
-          <entry key="properties" value="86" />
-          <entry key="xml" value="27" />
+          <entry key="dummy" value="59" />
+          <entry key="html" value="1922" />
+          <entry key="java" value="15696" />
+          <entry key="properties" value="88" />
+          <entry key="xml" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="24" />
-          <entry key="HTML" value="1138" />
-          <entry key="JAVA" value="11488" />
-          <entry key="PLAIN_TEXT" value="49" />
-          <entry key="Properties" value="86" />
-          <entry key="XML" value="27" />
+          <entry key="HTML" value="1922" />
+          <entry key="JAVA" value="15696" />
+          <entry key="PLAIN_TEXT" value="59" />
+          <entry key="Properties" value="88" />
+          <entry key="XML" value="76" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/models/Order.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/components/master.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="335">
+              <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/OrderStatus.java">
+        <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="112">
-              <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/enums/Urls.java">
+        <entry file="file://$PROJECT_DIR$/clientUI/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="5" column="59" lean-forward="true" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/dao/OrderDetailsDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="7" column="79" lean-forward="true" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/controllers/OrderController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="40" column="38" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/dao/OrderDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="924">
+              <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -288,9 +188,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="HTML File" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -300,57 +200,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/CategoryProxy.java" />
-        <option value="$PROJECT_DIR$/categories/src/main/java/com/supermarket/categories/CategoriesApplication.java" />
-        <option value="$PROJECT_DIR$/categories/pom.xml" />
-        <option value="$PROJECT_DIR$/categories/src/main/java/com/supermarket/categories/RegisterController.java" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/Category.java" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/HomeController.java" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/CatalogueController.java" />
-        <option value="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/models/Category.java" />
-        <option value="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/controllers/CategoryController.java" />
-        <option value="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/models/ProductCategories.java" />
-        <option value="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/models/Product.java" />
-        <option value="$PROJECT_DIR$/discovery/src/main/java/com/ntic/discovery/entity/Microservice.java" />
-        <option value="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/dao/ProductDao.java" />
-        <option value="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/controllers/ProductController.java" />
-        <option value="$PROJECT_DIR$/products/src/main/java/com/supermarket/products/RegisterController.java" />
-        <option value="$PROJECT_DIR$/discovery/src/main/java/com/ntic/discovery/controllers/MsCommandController.java" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/category-products.html" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/ProductController.java" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/components/productCard.html" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/components/footer.html" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/components/navbar.html" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/components/categoryCard.html" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/components/cardsComponents.html" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/catalogue.html" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/categoryProducts.html" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/resources/static/css/style.css" />
-        <option value="$PROJECT_DIR$/clientUI/pom.xml" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/Product.java" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/components/components.html" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/ProductProxy.java" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/RequestHandler.java" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/components/master.html" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/CartItem.java" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/ShoppingCartController.java" />
-        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/shoppingCart.html" />
-        <option value="$PROJECT_DIR$/command/pom.xml" />
-        <option value="$PROJECT_DIR$/orders/pom.xml" />
-        <option value="$PROJECT_DIR$/orders/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/employees/src/main/java/com/supermarket/employees/dao/OrderDetailsDao.java" />
-        <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/dao/OrderDetailsDao.java" />
-        <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/models/Order.java" />
-        <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/proxies/RequestHandler.java" />
         <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/proxies/DiscoveryProxy.java" />
         <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/requestHandler/RequestHandler.java" />
         <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/models/OrderDetails.java" />
         <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/requestHandler/DiscoveryProxy.java" />
         <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/proxies/ProductProxy.java" />
         <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/OrderStatus.java" />
+        <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/OrdersApplication.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/orders/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/cart.html" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/shoppingCart.html" />
+        <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/enums/OrderStatus.java" />
+        <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/models/Order.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/ShoppingCartController.java" />
+        <option value="$PROJECT_DIR$/test/src/main/java/com/example/test/TestApplication.java" />
+        <option value="$PROJECT_DIR$/test/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/test/src/main/java/com/example/test/controllers/TestController.java" />
+        <option value="$PROJECT_DIR$/test/pom.xml" />
+        <option value="$PROJECT_DIR$/test/src/main/java/com/example/test/auth/ApplicationUser.java" />
+        <option value="$PROJECT_DIR$/test/src/main/java/com/example/test/models/Client.java" />
+        <option value="$PROJECT_DIR$/test/src/main/java/com/example/test/auth/PasswordConfig.java" />
+        <option value="$PROJECT_DIR$/test/src/main/java/com/example/test/auth/AuthenticationSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/dao/ClientDao.java" />
+        <option value="$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/controllers/ClientController.java" />
+        <option value="$PROJECT_DIR$/test/src/main/java/com/example/test/auth/ApplicationUserService.java" />
+        <option value="$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/ClientsApplication.java" />
+        <option value="$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/RegisterController.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/Client.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/register.html" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/AuthController.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/OrderDetails.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/CategoryProxy.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/ClientProxy.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/ProductProxy.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/auth/ApplicationUser.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/auth/ApplicationUserService.java" />
+        <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/RegisterController.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/Order.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/configurations/ApplicationSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/MyOrdersController.java" />
         <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/dao/OrderDao.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/OrderProxy.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/RequestHandler.java" />
         <option value="$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/controllers/OrderController.java" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/my-orders.html" />
+        <option value="$PROJECT_DIR$/clientUI/pom.xml" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/clientUI/src/main/resources/templates/components/master.html" />
       </list>
     </option>
   </component>
@@ -367,9 +267,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="36" />
     <option name="width" value="1366" />
-    <option name="height" value="737" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -379,14 +278,134 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
               <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="configurations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="proxies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="clientUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
@@ -451,103 +470,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="orders" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
+              <item name="orders" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="orders" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
-              <item name="orders" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="orders" type="462c0819:PsiDirectoryNode" />
-              <item name="proxies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
-              <item name="orders" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="orders" type="462c0819:PsiDirectoryNode" />
-              <item name="requestHandler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
-              <item name="orders" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="supermarket" type="b2602c69:ProjectViewProjectNode" />
-              <item name="supermarket" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -558,7 +498,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596883921723" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597406236263" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/orders" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -570,18 +510,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.supermarket.orders.proxies" />
-      <recent name="com.supermarket.orders.models" />
+      <recent name="com.supermarket.clients.models" />
+      <recent name="com.supermarket.clients" />
       <recent name="com.supermarket.clientUI.models" />
-      <recent name="com.supermarket.categories.models" />
-      <recent name="com.supermarket.categories" />
+      <recent name="com.example.test.models" />
+      <recent name="com.supermarket.orders.models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/clientUI/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/configurations" />
+      <recent name="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models" />
       <recent name="$PROJECT_DIR$/clientUI/src/main/resources/static/images" />
       <recent name="$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI" />
-      <recent name="$PROJECT_DIR$/cloning/src/main/java/com/ntic/cloning" />
-      <recent name="$PROJECT_DIR$/discovery/src/main/java/com/ntic/discovery" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -602,7 +542,7 @@
     </option>
     <option name="contentProportion" value="0.21981424" />
   </component>
-  <component name="RunManager" selected="Spring Boot.OrdersApplication">
+  <component name="RunManager" selected="Spring Boot.ClientUiApplication">
     <configuration name="CategoriesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="categories" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.supermarket.categories.CategoriesApplication" />
@@ -763,11 +703,21 @@
       <workItem from="1596792390891" duration="3686000" />
       <workItem from="1596819698212" duration="1939000" />
       <workItem from="1596873938141" duration="10342000" />
+      <workItem from="1596901750375" duration="2792000" />
+      <workItem from="1596960009648" duration="7219000" />
+      <workItem from="1596992569847" duration="2040000" />
+      <workItem from="1597048195229" duration="2145000" />
+      <workItem from="1597137458544" duration="594000" />
+      <workItem from="1597219663625" duration="11309000" />
+      <workItem from="1597250677527" duration="6279000" />
+      <workItem from="1597307496962" duration="10176000" />
+      <workItem from="1597397058069" duration="9651000" />
+      <workItem from="1597422552298" duration="504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156612000" />
+    <option name="totallyTimeSpent" value="209321000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -779,10 +729,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1366" y="36" width="1366" height="737" extended-state="6" />
+    <frame x="0" y="36" width="1366" height="737" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.275" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" sideWeight="0.5016611" side_tool="true" weight="0.2840909" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -804,7 +754,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32724252" />
-      <window_info active="true" anchor="bottom" auto_hide="true" x="0" y="0" width="1366" height="768" id="Run Dashboard" order="14" type="FLOATING" visible="true" weight="0.4435216" />
+      <window_info anchor="bottom" auto_hide="true" x="0" y="36" width="1366" height="737" id="Run Dashboard" order="14" type="FLOATING" weight="0.49335548" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -825,350 +775,369 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>passwordEncoder.encode(&quot;123456&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/products/src/main/java/com/supermarket/products/models/ProductCategories.java" />
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/CatalogueController.java">
+    <entry file="file://$PROJECT_DIR$/orders/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/cart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <caret line="213" column="20" lean-forward="true" selection-start-line="213" selection-start-column="20" selection-end-line="213" selection-end-column="139" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/products/src/main/java/com/supermarket/products/models/Product.java">
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/shoppingCart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+        <state relative-caret-position="3332">
+          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/discovery/src/main/java/com/ntic/discovery/controllers/MsQueryController.java">
+    <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/models/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="34" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="34" />
+        <state relative-caret-position="448">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/products/src/main/java/com/supermarket/products/controllers/CategoryController.java">
+    <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/models/OrderDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="1288">
+          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/discovery/src/main/java/com/ntic/discovery/entity/Microservice.java">
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/ShoppingCartController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="2632">
+          <caret line="109" column="4" selection-start-line="109" selection-start-column="4" selection-end-line="126" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/products/src/main/java/com/supermarket/products/dao/ProductDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/src/main/java/com/supermarket/products/controllers/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discovery/src/main/java/com/ntic/discovery/service/impl/QueryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discovery/src/main/java/com/ntic/discovery/controllers/MsCommandController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="32" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/src/main/java/com/supermarket/products/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/components/footer.html, header.html" />
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/components/productCard.html" />
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/components/footer.html" />
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/components/categoryCard.html" />
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/components/navbar.html" />
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/components/cardsComponents.html" />
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/categoryProducts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/Product.java">
+    <entry file="file://$PROJECT_DIR$/test/src/main/java/com/example/test/TestApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/test/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26796">
-          <caret line="957" column="14" selection-start-line="957" selection-start-column="14" selection-end-line="957" selection-end-column="14" />
+        <state relative-caret-position="196">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/cart.html">
+    <entry file="file://$PROJECT_DIR$/test/src/main/java/com/example/test/controllers/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="93" column="4" lean-forward="true" selection-start-line="93" selection-start-column="4" selection-end-line="222" />
+        <state relative-caret-position="196">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/components/master.html">
+    <entry file="file://$PROJECT_DIR$/test/src/main/java/com/example/test/models/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+        <state relative-caret-position="280">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar!/org/thymeleaf/standard/processor/AbstractStandardExpressionAttributeTagProcessor.class">
+    <entry file="file://$PROJECT_DIR$/test/src/main/java/com/example/test/auth/ApplicationUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="310">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/main/java/com/example/test/auth/PasswordConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/main/java/com/example/test/auth/ApplicationUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/main/java/com/example/test/auth/AuthenticationSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/ClientsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/src/main/java/com/supermarket/products/ProductsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.3.3.RELEASE/spring-security-config-5.3.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1823">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/loginold.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34188">
+          <caret line="1221" column="4" selection-start-line="1221" selection-start-column="4" selection-end-line="1233" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="26" column="88" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="85" selection-start-line="15" selection-start-column="85" selection-end-line="15" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/enums/ClientSex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/components/components.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="50" />
+        <state relative-caret-position="476">
+          <caret line="26" column="71" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/RequestHandler.java">
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/AuthController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="279">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/CartItem.java">
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/OrderDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="178">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/CategoryProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/DiscoveryProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/ProductProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        <state relative-caret-position="114">
+          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/catalogue.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="13" selection-end-line="460" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/shoppingCart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="981">
-          <caret line="151" column="28" selection-start-line="151" selection-start-column="28" selection-end-line="151" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/ShoppingCartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/command/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="37" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orders/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1148">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orders/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employees/src/main/java/com/supermarket/employees/dao/EmployeeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/dao/OrderDetailsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="79" lean-forward="true" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/models/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/requestHandler/Microservice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/models/OrderDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-          <folding>
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
-            <element signature="e#1159#1160#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/enums/Urls.java">
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/configurations/PasswordConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="5" column="59" lean-forward="true" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="69" />
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/requestHandler/RequestHandler.java">
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/auth/ApplicationUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="392">
+          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/requestHandler/DiscoveryProxy.java">
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/auth/ApplicationUserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
+        <state relative-caret-position="170">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/proxies/ProductProxy.java">
+    <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        <state relative-caret-position="178">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/models/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/ClientProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/enums/OrderStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/configurations/ApplicationSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/OrderStatus.java">
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        <state relative-caret-position="252">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/controller/MyOrdersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/controllers/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/src/main/java/com/supermarket/clients/dao/ClientDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/RequestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="108" column="55" selection-start-line="108" selection-start-column="55" selection-end-line="108" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/dao/OrderDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="196">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orders/src/main/java/com/supermarket/orders/controllers/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="40" column="38" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="338">
+          <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/java/com/supermarket/clientUI/proxies/OrderProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/my-orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="100" column="41" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/components/master.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientUI/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
         </state>
       </provider>
     </entry>

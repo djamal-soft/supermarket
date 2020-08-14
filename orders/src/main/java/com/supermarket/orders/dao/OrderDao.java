@@ -11,5 +11,7 @@ import java.util.Optional;
 public interface OrderDao extends JpaRepository<Order, Integer> {
 
     List<Order> findAll();
+    List<Order> findAllByClientId(int id);
     Order findById(int id);
+    void deleteById(int id);
 }

@@ -1,7 +1,10 @@
 package com.supermarket.clientUI.controller;
 
 import com.supermarket.clientUI.models.CartItem;
+import com.supermarket.clientUI.models.Order;
+import com.supermarket.clientUI.models.OrderDetails;
 import com.supermarket.clientUI.models.Product;
+import com.supermarket.clientUI.proxies.OrderProxy;
 import com.supermarket.clientUI.proxies.ProductProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -53,7 +56,7 @@ public class ShoppingCartController {
             cart.get(id).decreaseQuantity();
         }
 
-        return "redirect:/";
+        return "redirect:/cart";
     }
 
     /**
@@ -69,7 +72,7 @@ public class ShoppingCartController {
         // key is product is
         cart.remove(id);
 
-        return "redirect:/";
+        return "redirect:/cart";
     }
 
     private void addProductToCart(int id, HttpServletRequest request) {
@@ -86,6 +89,7 @@ public class ShoppingCartController {
         }
 
     }
+
 
 
     /**

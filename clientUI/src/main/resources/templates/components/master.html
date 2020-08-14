@@ -60,10 +60,13 @@
                             <!--</ul>-->
                         </li>
 
-                        <li><a href="shop.html">Shop</a></li>
+                        <!--<li><a href="shop.html">Shop</a></li>-->
                         <li><a href="/catalogue">Catalogue</a></li>
-                        <li><a href="#">New Arrivals</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li sec:authorize="isAuthenticated()">
+                            <a href="/my-orders">My Orders</a>
+                        </li>
+                        <!--<li><a href="#">New Arrivals</a></li>-->
+                        <!--<li><a href="contact.html">Contact</a></li>-->
                     </ul>
                 </nav>
             </div>
@@ -72,9 +75,11 @@
                 <a href="#" class="icons-btn d-inline-block"><span class="icon-heart-o"></span></a>
                 <a href="/cart" class="icons-btn d-inline-block bag">
                     <span class="icon-shopping-bag"></span>
-                    <span class="number">2</span>
+                    <!--<span class="number">2</span>-->
                 </a>
                 <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span class="icon-menu"></span></a>
+                <a sec:authorize="!isAuthenticated()" href="/login" class="icons-btn d-inline-block"><span class="icon-user"></span></a>
+                <a sec:authorize="isAuthenticated()" href="/logout" class="icons-btn d-inline-block"><span class="icon-sign-out"></span></a>
             </div>
         </div>
     </div>

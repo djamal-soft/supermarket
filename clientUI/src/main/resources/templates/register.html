@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="components/master :: head"></head>
+<body>
+
+<div class="site-wrap">
+
+
+  <div th:replace="components/master :: navbar"></div>
+
+
+  <div class="site-section">
+    <div class="container text-center">
+      <div class="d-flex align-items-center justify-content-center">
+
+        <form class="w-50" th:object="${client}" method="post" th:action="@{/register}" action="/register">
+          <h2 class="form-signin-heading">Register</h2>
+          <input type="hidden" th:field="*{id}" />
+          <p>
+            <label for="fullname" class="sr-only">full name</label>
+            <input th:field="*{fullName}" type="text" id="fullname" name="fullName" class="form-control" placeholder="Full name" required="" autofocus="">
+          </p>
+
+          <p>
+            <label for="username" class="sr-only">email</label>
+            <input th:field="*{email}" type="email" id="username" name="username" class="form-control" placeholder="Email" required="" autofocus="">
+          </p>
+          <p>
+            <label for="password" class="sr-only">Password</label>
+            <input th:field="*{password}" type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
+          </p>
+          <p>
+            <label for="phone" class="sr-only">Phone</label>
+            <input th:field="*{phone}" type="number" id="phone" name="phone" class="form-control" placeholder="Phone" required="">
+          </p>
+          <p>
+            <label for="age" class="sr-only">Age</label>
+            <input th:field="*{age}" type="number" id="age" name="age" class="form-control" placeholder="Phone" required="">
+          </p>
+          <p>
+            <label for="sex" class="sr-only">Phone</label>
+            <!--<input th:field="*{sex}" type="number" id="sex" name="sex" class="form-control" placeholder="Phone" required="">-->
+            <select th:field="*{sex}" id="sex" class="form-control" required="">
+              <option value="MALE">Male</option>
+              <option value="FEMALE">Female</option>
+            </select>
+          </p>
+          <p>
+            <label for="address" class="sr-only">Address</label>
+            <textarea th:field="*{address}" id="address" name="address" class="form-control" placeholder="address" required=""></textarea>
+          </p>
+          <input name="_csrf" type="hidden" value="2ae8ac48-38da-4b8c-9e16-bf0ff03e7903">
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+          <a href="/login" class="btn btn-sm btn-secondary btn-block">Or Login</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer th:replace="components/master :: footer"></footer>
+</div>
+
+<div th:replace="components/master :: scripts"></div>
+
+<script>
+
+  // increase product quantity
+  $('.increase').click(function () {
+
+      var id = $(this).data('id');
+      sendRequest(id, 'POST');
+  });
+
+  // decrease product quantity
+  $('.decrease').click(function () {
+
+      var id = $(this).data('id');
+      sendRequest(id, 'PUT');
+  });
+  // remove product from shopping cart
+  $('.remove').click(function () {
+
+      var id = $(this).data('id');
+      sendRequest(id, 'DELETE');
+
+      // remove product row from table
+      $('#' + id).remove();
+  });
+
+  /**
+   * send request to backend
+   * @param id
+   * @param method
+   */
+  function sendRequest(id, method) {
+      $.ajax('/cart', {
+          type: method,  // http method
+          data: { id:  id},  // data to submit
+          success: function (data, status, xhr) {
+              console.log('success');
+          },
+          error: function (jqXhr, textStatus, errorMessage) {
+              console.log(errorMessage);
+          }
+      });
+  }
+</script>
+
+</body>
+</html>

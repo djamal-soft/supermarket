@@ -24,10 +24,7 @@ public class HomeController {
     public String index(Model model) {
 
         ArrayList<Product> products = productProxy.allProducts();
-        System.out.println(products);
-
         ArrayList<Category> categories = categoryProxy.allCategories();
-        System.out.println(categories);
 
         model.addAttribute("products", products);
         model.addAttribute("categories", categories);

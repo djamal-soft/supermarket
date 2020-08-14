@@ -8,5 +8,6 @@ import org.springframework.stereotype.Repository;
 public interface ClientDao extends JpaRepository<Client, Integer> {
 
     Client findById(int id);
+    Client findByEmail(String email);
     void deleteById(int id);
 }
