@@ -59,6 +59,10 @@ public class ClientController {
     @DeleteMapping(value = "clients/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void destroy(@PathVariable("id") int id) {
-        dao.deleteById(id);
+        try {
+            dao.deleteById(id);
+        } catch (Exception e) {
+            ;
+        }
     }
 }

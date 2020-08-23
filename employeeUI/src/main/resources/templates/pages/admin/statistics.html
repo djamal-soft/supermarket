@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="pages/components/master :: head">
+
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper">
+      <div th:replace="pages/components/master :: navbar"></div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>Blank Page</h1>
+          </div>
+
+          <div class="section-body">
+          </div>
+        </section>
+      </div>
+      <footer  th:replace="pages/components/master :: footer" class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
+        </div>
+        <div class="footer-right">
+          2.3.0
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <div  th:replace="pages/components/master :: scripts">
+
+  </div>
+  <!-- Page Specific JS File -->
+</body>
+</html>

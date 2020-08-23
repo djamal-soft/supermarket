@@ -32,6 +32,24 @@ public class RegisterController {
         ms.setVersion(1);
         services.add(ms);
 
+        ms = new Microservice();
+        ms.setAddress(makeUrl(host, port, "delivery-man-orders"));
+        ms.setMkeys("delivery-man-orders");
+        ms.setVersion(1);
+        services.add(ms);
+
+        ms = new Microservice();
+        ms.setAddress(makeUrl(host, port, "next-status"));
+        ms.setMkeys("next-status");
+        ms.setVersion(1);
+        services.add(ms);
+
+        ms = new Microservice();
+        ms.setAddress(makeUrl(host, port, "refuse-order"));
+        ms.setMkeys("refuse-order");
+        ms.setVersion(1);
+        services.add(ms);
+
         for (Microservice service : services) {
             rest.postForLocation(DISCOVERY_URL,service);
         }

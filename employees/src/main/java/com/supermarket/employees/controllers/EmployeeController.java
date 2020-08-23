@@ -23,10 +23,26 @@ public class EmployeeController {
         return dao.findAll();
     }
 
+    @GetMapping(value = "all-delivery-men")
+    public List<Employee> allDeliveryMen() {
+
+        return dao.findAllByRole("DELIVERY_MAN");
+    }
+
     @GetMapping(value = "employees/{id}")
     public Employee show(@PathVariable("id") int id) {
 
         Employee employee = dao.findById(id);
+
+        if (employee == null) throw new EmployeeNotFoundException();
+
+        return employee;
+    }
+
+    @GetMapping(value = "employee-by-email/{email}")
+    public Employee show(@PathVariable("email") String email) {
+
+        Employee employee = dao.findByEmail(email);
 
         if (employee == null) throw new EmployeeNotFoundException();
 
@@ -50,6 +66,10 @@ public class EmployeeController {
     @DeleteMapping(value = "employees/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void destroy(@PathVariable("id") int id) {
-        dao.deleteById(id);
+        try {
+            dao.deleteById(id);
+        } catch (Exception e) {
+            ;
+        }
     }
 }

@@ -37,6 +37,12 @@ public class RegisterController {
         ms.setVersion(1);
         services.add(ms);
 
+        ms = new Microservice();
+        ms.setAddress(makeUrl(host, port, "images"));
+        ms.setMkeys("upload-product-image");
+        ms.setVersion(1);
+        services.add(ms);
+
         for (Microservice service : services) {
             rest.postForLocation(DISCOVERY_URL,service);
         }

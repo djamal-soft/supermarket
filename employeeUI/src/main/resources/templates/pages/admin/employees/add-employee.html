@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="pages/components/master :: head">
+
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper">
+      <div th:replace="pages/components/master :: navbar"></div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>Employees</h1>
+          </div>
+
+          <div class="section-body">
+
+            <div class="card">
+              <div class="card-header">
+                <h4>Add Employee</h4>
+                <!--<a href="/employees/add" class="btn btn-primary float-right">Add Employee</a>-->
+              </div>
+              <div class="card-body">
+                <form method="post" th:action="@{/employees}" th:object="${employee}">
+                  <input type="text" th:field="*{id}" hidden>
+
+
+                  <!--Start Input-->
+                  <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" th:field="*{fullName}" class="form-control" required="">
+                    <div class="invalid-feedback">
+                      name is required !
+                    </div>
+                  </div>
+                  <!--End Input-->
+
+                  <!--Start Input-->
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" th:field="*{email}" class="form-control" required="">
+                    <div class="invalid-feedback">
+                      Email is required !
+                    </div>
+                  </div>
+                  <!--End Input-->
+
+                  <!--Start Input-->
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" th:field="*{password}" class="form-control">
+                    <div class="invalid-feedback">
+                      password is required !
+                    </div>
+                  </div>
+                  <!--End Input-->
+
+                  <!--Start Input-->
+                  <div class="form-group">
+                    <label>Phone</label>
+                    <input type="number" th:field="*{phone}" class="form-control" required="">
+                    <div class="invalid-feedback">
+                      Phone is required !
+                    </div>
+                  </div>
+                  <!--End Input-->
+
+                  <!--Start Input-->
+                  <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" th:field="*{age}" value="18" min="18" class="form-control" required="">
+                    <div class="invalid-feedback">
+                      age is required !
+                    </div>
+                  </div>
+                  <!--End Input-->
+
+                  <!--Start Input-->
+                  <div class="form-group">
+                    <label>Sex</label>
+                    <select type="number" th:field="*{sex}" class="form-control" required="">
+                      <option value="MALE" selected>Male</option>
+                      <option value="FEMALE">Female</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      sex is required !
+                    </div>
+                  </div>
+                  <!--End Input-->
+
+                  <!--Start Input-->
+                  <div class="form-group">
+                    <label>Role</label>
+                    <select type="number" th:field="*{role}" class="form-control" required="">
+                      <option value="ADMIN" selected>Admin</option>
+                      <option value="DELIVERY_MAN">Delivery Man</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Role is required !
+                    </div>
+                  </div>
+                  <!--End Input-->
+
+                  <!--Start Input-->
+                  <div class="form-group">
+                    <label>Address</label>
+                    <textarea th:field="*{address}" class="form-control" cols="4" required=""></textarea>
+                    <div class="invalid-feedback">
+                      address is required !
+                    </div>
+                  </div>
+                  <!--End Input-->
+
+                  <div class="form-group">
+                    <button class="btn btn-primary">Save</button>
+                  </div>
+
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer  th:replace="pages/components/master :: footer" class="main-footer"> </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <div  th:replace="pages/components/master :: scripts">
+
+  </div>
+  <!-- Page Specific JS File -->
+
+<script>
+
+    // refuse order
+    $('.remove').click(function () {
+
+        var id = $(this).data('id');
+        sendRequest(id, 'DELETE', 'clients');
+    });
+
+    /**
+     * send request to backend
+     * @param id
+     * @param method
+     * @param url
+     */
+    function sendRequest(id, method, url) {
+        $.ajax(url, {
+            type: method,  // http method
+            data: { id:  id},  // data to submit
+            success: function (data, status, xhr) {
+                console.log('success');
+                window.location.reload();
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                console.log(errorMessage);
+                window.location.reload();
+            }
+        });
+    }
+
+</script>
+</body>
+</html>

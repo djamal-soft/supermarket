@@ -17,7 +17,11 @@ public class Order {
     @GeneratedValue
     private int id;
     private int clientId;
+    private int deliveryManId;
     private String address;
+
+    @Transient
+    private Object client;
 
     @Temporal(TemporalType.DATE)
     private Date orderDate;
@@ -43,6 +47,22 @@ public class Order {
 
     public void setClientId(int clientId) {
         this.clientId = clientId;
+    }
+
+    public int getDeliveryManId() {
+        return deliveryManId;
+    }
+
+    public void setDeliveryManId(int deliveryManId) {
+        this.deliveryManId = deliveryManId;
+    }
+
+    public Object getClient() {
+        return client;
+    }
+
+    public void setClient(Object client) {
+        this.client = client;
     }
 
     public String getAddress() {
@@ -81,9 +101,12 @@ public class Order {
     public String toString() {
         return "Order{" +
                 "id=" + id +
+                ", clientId=" + clientId +
+                ", deliveryManId=" + deliveryManId +
                 ", address='" + address + '\'' +
+                ", client=" + client +
                 ", orderDate=" + orderDate +
-                ", status='" + status + '\'' +
+                ", status=" + status +
                 ", orderDetails=" + orderDetails +
                 '}';
     }

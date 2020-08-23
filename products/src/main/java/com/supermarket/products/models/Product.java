@@ -27,6 +27,9 @@ public class Product {
     @NotBlank(message = "categories est requis")
     private String categories;
 
+    @Transient
+    private List<Object> categoriesObjects;
+
     public Product() {
     }
 
@@ -70,6 +73,14 @@ public class Product {
         this.categories = categories;
     }
 
+    public List<Object> getCategoriesObjects() {
+        return categoriesObjects;
+    }
+
+    public void setCategoriesObjects(List<Object> categoriesObjects) {
+        this.categoriesObjects = categoriesObjects;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
@@ -78,6 +89,7 @@ public class Product {
                 ", price=" + price +
                 ", image='" + image + '\'' +
                 ", categories='" + categories + '\'' +
+                ", categoriesObjects=" + categoriesObjects +
                 '}';
     }
 }

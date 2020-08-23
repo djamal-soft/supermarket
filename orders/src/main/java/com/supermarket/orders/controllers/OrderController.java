@@ -3,8 +3,10 @@ package com.supermarket.orders.controllers;
 import com.supermarket.orders.dao.OrderDao;
 import com.supermarket.orders.dao.OrderDetailsDao;
 import com.supermarket.orders.enums.OrderStatus;
+import com.supermarket.orders.models.Employee;
 import com.supermarket.orders.models.Order;
 import com.supermarket.orders.models.OrderDetails;
+import com.supermarket.orders.proxies.EmployeeProxy;
 import com.supermarket.orders.proxies.ProductProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +25,9 @@ public class OrderController {
 
      @Autowired
      private ProductProxy productProxy;
+
+     @Autowired
+     private EmployeeProxy employeeProxy;
 
     /**
      * Gey All Orders
@@ -63,6 +68,7 @@ public class OrderController {
         Date date = new Date(System.currentTimeMillis());
         order.setStatus(OrderStatus.PENDING);
         order.setOrderDate(date);
+        order.setDeliveryManId(getDeliveryManId());
         order = orderDao.save(order);
 
         return storeOrderDetails(order, order.getOrderDetails());
@@ -114,4 +120,48 @@ public class OrderController {
         order.setStatus(OrderStatus.REFUSED);
         orderDao.save(order);
     }
+
+    @GetMapping(value = "next-status/{id}")
+    public Order nextStatus(@PathVariable("id") int id) {
+        Order order = orderDao.findById(id);
+        switch (order.getStatus()) {
+            case PENDING:
+                order.setStatus(OrderStatus.IN_PROGRESS);
+                break;
+            case IN_PROGRESS:
+                order.setStatus(OrderStatus.FINISHED);
+                break;
+        }
+
+        orderDao.save(order);
+
+        return order;
+    }
+
+    @GetMapping(value = "refuse-order/{id}")
+    public Order refuseOrder(@PathVariable("id") int id) {
+        Order order = orderDao.findById(id);
+        order.setStatus(OrderStatus.REFUSED);
+        orderDao.save(order);
+
+        return order;
+    }
+
+
+    private int getDeliveryManId() {
+
+        // all delivery man order by top delivery man
+        List<Integer> delivery = orderDao.countTotalOrdersByDeliveryMan();
+
+        List<Employee> allEmployees = employeeProxy.getAllDeliveryMen();
+
+        for (Employee employee: allEmployees) {
+            if(!delivery.contains(employee.getId())) {
+                return employee.getId();
+            }
+        }
+
+        return delivery.get(0);
+    }
+
 }

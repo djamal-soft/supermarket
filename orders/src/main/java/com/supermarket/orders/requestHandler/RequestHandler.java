@@ -1,20 +1,33 @@
 package com.supermarket.orders.requestHandler;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-
+@Service
 public class RequestHandler {
 
+    public final static String GET    = "GET";
+    public final static String POST   = "POST";
+    public final static String PUT    = "PUT";
+    public final static String DELETE = "DELETE";
+
     private String serviceKey;
-    private String additionnelParamsToUrl;
+    private String additionnelParamsToUrl; // use it for get method
     private Class responseType;
     private float serviceVersion;
+    private HttpEntity request; // use it for post method
+    private String method;
     private RestTemplate rest;
 
+    @Autowired
     public RequestHandler() {
 
         rest = new RestTemplate();
         additionnelParamsToUrl = null;
+        request = null;
+        method = this.GET;
     }
 
     public RequestHandler setServiceKey(String serviceKey) {
@@ -40,7 +53,19 @@ public class RequestHandler {
         return this;
     }
 
-    public Object handleGetRequest() {
+    public RequestHandler setRequest(HttpEntity request) {
+        this.request = request;
+
+        return this;
+    }
+
+    public RequestHandler setMethod(String method) {
+        this.method = method;
+
+        return this;
+    }
+
+    public Object handle() {
         DiscoveryProxy discoveryProxy = new DiscoveryProxy();
         Microservice microservice = discoveryProxy.getService(serviceKey, serviceVersion);
 
@@ -50,15 +75,12 @@ public class RequestHandler {
 
         Object response = null;
         try {
-            response = rest.getForObject(microservice.getAddress(), responseType);
+            response = sendRequest(microservice);
         }
         catch (Exception e) {
-
-            System.out.println(e.getMessage());
             microservice = handleError(microservice);
-            response = rest.getForObject(microservice.getAddress(), responseType);
+            response = sendRequest(microservice);
         }
-
 
         return response;
     }
@@ -66,5 +88,26 @@ public class RequestHandler {
     private Microservice handleError(Microservice microservice) {
 
         return null;
+    }
+
+    private Object sendRequest(Microservice microservice) {
+        Object response = null;
+
+        switch (method) {
+            case GET:
+                response = rest.getForObject(microservice.getAddress(), responseType);
+                break;
+            case POST:
+                response = rest.postForObject(microservice.getAddress(), request, responseType);
+                break;
+            case PUT:
+//                rest.delete(microservice.getAddress());
+                break;
+            case DELETE:
+                rest.delete(microservice.getAddress());
+                break;
+        }
+
+        return response;
     }
 }

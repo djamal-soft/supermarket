@@ -16,6 +16,6 @@ public class ProductProxy {
                 .setAdditionnelParamsToUrl(id + "")
                 .setResponseType(Object.class);
 
-        return handler.handleGetRequest();
+        return handler.handle();
     }
 }

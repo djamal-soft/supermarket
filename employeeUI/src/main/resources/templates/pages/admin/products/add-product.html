@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="pages/components/master :: head">
+
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper">
+      <div th:replace="pages/components/master :: navbar"></div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>Products</h1>
+          </div>
+
+          <div class="section-body">
+
+            <div class="card">
+              <div class="card-header">
+                <h4>Add Product</h4>
+                <!--<a href="/employees/add" class="btn btn-primary float-right">Add Employee</a>-->
+              </div>
+              <div class="card-body">
+                <form method="post" th:action="@{/products}" enctype="multipart/form-data">
+                  <input type="text" name="id" th:value="${product.id}" hidden>
+                  <!--<input type="text" th:field="*{image}" hidden>-->
+
+
+                  <!--Start Input-->
+                  <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name"  th:value="${product.name}" class="form-control" required="">
+                    <div class="invalid-feedback">
+                      name is required !
+                    </div>
+                  </div>
+                  <!--End Input-->
+
+                  <!--Start Input-->
+                  <div class="form-group">
+                    <label>Price</label>
+                    <input type="number" name="price"  th:value="${product.price}" min="1" class="form-control" required="">
+                    <div class="invalid-feedback">
+                      Price is required !
+                    </div>
+                  </div>
+                  <!--End Input-->
+
+                  <!--Start Input-->
+                  <div class="form-group">
+                    <label>Categories</label>
+                    <select type="number" name="categories" th:attr="data-values=${product.categories}" multiple class="form-control select2" required="">
+                      <option th:each="category : ${categories}" th:value="${category.id}" th:text="${category.title}">Male</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      categories is required !
+                    </div>
+                  </div>
+                  <!--End Input-->
+
+                  <!--Start Input-->
+                  <div class="form-group">
+                    <label>Image</label>
+                    <input type="file" name="image" class="form-control" required>
+                    <div class="invalid-feedback">
+                      image is required !
+                    </div>
+                  </div>
+                  <!--End Input-->
+
+
+
+
+
+                  <div class="form-group">
+                    <button class="btn btn-primary">Save</button>
+                  </div>
+
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer  th:replace="pages/components/master :: footer" class="main-footer"> </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <div  th:replace="pages/components/master :: scripts">
+
+  </div>
+  <!-- Page Specific JS File -->
+
+<script>
+
+  $(document).ready(function () {
+      var values = $('select').data('values');
+      values = values.split(',');
+      console.log(values);
+      $('.select2').select2('val', values);
+  });
+
+    // refuse order
+    $('.remove').click(function () {
+
+        var id = $(this).data('id');
+        sendRequest(id, 'DELETE', 'clients');
+    });
+
+    /**
+     * send request to backend
+     * @param id
+     * @param method
+     * @param url
+     */
+    function sendRequest(id, method, url) {
+        $.ajax(url, {
+            type: method,  // http method
+            data: { id:  id},  // data to submit
+            success: function (data, status, xhr) {
+                console.log('success');
+                window.location.reload();
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                console.log(errorMessage);
+                window.location.reload();
+            }
+        });
+    }
+
+</script>
+</body>
+</html>

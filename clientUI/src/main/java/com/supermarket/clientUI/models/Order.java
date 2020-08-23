@@ -9,6 +9,8 @@ public class Order {
 
     private int id;
     private int clientId;
+    private int deliveryManId;
+    private Client client;
     private String address;
     private Date orderDate;
     private String status;
@@ -30,6 +32,22 @@ public class Order {
 
     public void setClientId(int clientId) {
         this.clientId = clientId;
+    }
+
+    public int getDeliveryManId() {
+        return deliveryManId;
+    }
+
+    public void setDeliveryManId(int deliveryManId) {
+        this.deliveryManId = deliveryManId;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
     }
 
     public String getAddress() {
@@ -88,6 +106,8 @@ public class Order {
         return "Order{" +
                 "id=" + id +
                 ", clientId=" + clientId +
+                ", deliveryManId=" + deliveryManId +
+                ", client=" + client +
                 ", address='" + address + '\'' +
                 ", orderDate=" + orderDate +
                 ", status='" + status + '\'' +

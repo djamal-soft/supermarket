@@ -4,9 +4,12 @@ import com.supermarket.categories.dao.CategoryDao;
 import com.supermarket.categories.exceptions.CategoryNotFoundException;
 import com.supermarket.categories.models.Category;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.net.InetAddress;
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -15,10 +18,19 @@ public class CategoryController {
     @Autowired
     private CategoryDao categoryDao;
 
+    @Autowired
+    private Environment environment;
+
     @GetMapping(value = "/categories")
     public List<Category> allCategories() {
 
-        return categoryDao.findAll();
+        List<Category> categories = categoryDao.findAll();
+        for (Category category: categories) {
+            category.setImage(
+                    getImageFullUrl(category.getImage())
+            );
+        }
+        return categories;
     }
 
     @GetMapping(value = "/categories/{id}")
@@ -30,7 +42,33 @@ public class CategoryController {
             throw new CategoryNotFoundException();
         }
 
+        category.setImage(
+                getImageFullUrl(category.getImage())
+        );
+
         return category;
+    }
+
+    @GetMapping(value = "/categories-by-ids/{ids}")
+    public List<Category> getCategoryByIds(@PathVariable("ids") String ids) {
+        ArrayList<Integer> idsList = new ArrayList<>();
+        String[] idsArray = ids.split(",");
+        for(String id: idsArray) {
+            idsList.add(Integer.parseInt(id));
+        }
+        List<Category> categories = categoryDao.findAllById(idsList);
+
+        for (Category category: categories) {
+            category.setImage(
+                    getImageFullUrl(category.getImage())
+            );
+        }
+
+//        if(category == null) {
+//            throw new CategoryNotFoundException();
+//        }
+
+        return categories;
     }
 
     @PostMapping(value = "/categories")
@@ -58,5 +96,18 @@ public class CategoryController {
         }
 
         categoryDao.delete(category);
+    }
+
+    private String getImageFullUrl(String imageUrl) {
+        String port = environment.getProperty("local.server.port");
+        String host = "http://localhost";
+
+        try {
+            host = InetAddress.getLocalHost().getHostAddress();
+        } catch (Exception e) {
+            ;
+        }
+
+        return "http://"+host + ":" + port + "/images/" + imageUrl;
     }
 }

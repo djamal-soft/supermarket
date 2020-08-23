@@ -1,5 +1,7 @@
 package com.supermarket.clientUI.models;
 
+import java.util.List;
+
 public class Product {
 
 
@@ -8,9 +10,7 @@ public class Product {
     private int price;
     private String image;
     private String categories;
-
-    public Product() {
-    }
+    private List<Category> categoriesObjects;
 
     public int getId() {
         return id;
@@ -52,6 +52,30 @@ public class Product {
         this.categories = categories;
     }
 
+//    public List<String> categoriesNames() {
+//
+//        List<String> categoriesNames = new ArrayList<>();
+//        for (Category category: categoriesObjects) {
+//            categoriesNames.add(category.getTitle());
+//        }
+//
+//        System.out.println(categoriesNames);
+//
+////        List<String> test = new ArrayList<>();
+////        test.add("djamal");
+////        test.add("bekhiekh");
+//        return categoriesNames;
+//    }
+
+
+    public List<Category> getCategoriesObjects() {
+        return categoriesObjects;
+    }
+
+    public void setCategoriesObjects(List<Category> categoriesObjects) {
+        this.categoriesObjects = categoriesObjects;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
@@ -60,6 +84,7 @@ public class Product {
                 ", price=" + price +
                 ", image='" + image + '\'' +
                 ", categories='" + categories + '\'' +
+                ", categoriesObjects=" + categoriesObjects +
                 '}';
     }
 }

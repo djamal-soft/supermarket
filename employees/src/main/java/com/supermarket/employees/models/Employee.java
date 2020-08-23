@@ -36,6 +36,9 @@ public class Employee {
     @NotBlank(message = "mot de pass est rquis")
     private String password;
 
+    @NotBlank(message = "role est rquis")
+    private String role;
+
     @Min(value = 18, message = "age doit etre +18")
     private int age;
 
@@ -94,6 +97,14 @@ public class Employee {
         this.password = password;
     }
 
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
     public int getAge() {
         return age;
     }
@@ -119,6 +130,7 @@ public class Employee {
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", role='" + role + '\'' +
                 ", age=" + age +
                 ", sex=" + sex +
                 '}';

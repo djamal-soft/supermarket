@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="pages/components/master :: head">
+
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper">
+      <div th:replace="pages/components/master :: navbar"></div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>Employees</h1>
+            <div class="w-100">
+              <a href="/employees/add" class="btn btn-primary float-right">Add Employee</a>
+            </div>
+          </div>
+
+          <div class="section-body">
+
+            <div class="card">
+              <div class="card-header">
+                <h4>List Of Employees</h4>
+              </div>
+              <div class="card-body p-0">
+                <div class="table-responsive">
+                  <table class="table table-striped table-md">
+                    <tr>
+                      <th>#</th>
+                      <th>full name</th>
+                      <!--<th>Address</th>-->
+                      <th>Phone</th>
+                      <th>Email</th>
+                      <th>Age</th>
+                      <th>Sex</th>
+                      <th>Role</th>
+                      <th>Action</th>
+                    </tr>
+                    <tr th:each="employee : ${employees}">
+                      <td th:text="${employee.id}">1</td>
+                      <td th:text="${employee.fullName}"></td>
+                      <td th:text="${employee.phone}"></td>
+                      <td th:text="${employee.email}"></td>
+                      <td th:text="${employee.age}"></td>
+                      <td th:text="${employee.sex}"></td>
+                      <td th:text="${employee.role == 'ADMIN' ? 'Admin' : 'Delivery Man'}"></td>
+                      <!--<td><div th:text="${order.status}" class="badge" th:classappend="|${order.status == 'PENDING' ? ' badge-dark' : ''} ${order.status == 'IN_PROGRESS' ? 'badge-warning' : ''} ${order.status == 'FINISHED' ? 'badge-success' : ''} ${order.status == 'REFUSED' ? 'badge-danger' : ''}|">Active</div></td>-->
+                      <td>
+                        <a th:attr="data-id=${employee.id}" href="#" class="btn btn-sm btn-icon btn-danger remove"><i class="fas fa-times"></i></a>
+                        <a th:href="${'/employees/update/'+employee.id}" class="btn btn-sm btn-icon btn-warning"><i class="fas fa-edit"></i></a>
+                        <!--<a th:if="${order.status != 'FINISHED' && order.status != 'REFUSED'}" th:attr="data-id=${order.id}" href="#" class="btn btn-secondary change-status">Next Status</a>-->
+                        <!--<a th:if="${order.status == 'IN_PROGRESS'}" th:attr="data-id=${order.id}" href="#" class="btn btn-danger refuse">Refuse</a>-->
+                      </td>
+                    </tr>
+
+                  </table>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer  th:replace="pages/components/master :: footer" class="main-footer"> </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <div  th:replace="pages/components/master :: scripts">
+
+  </div>
+  <!-- Page Specific JS File -->
+
+<script>
+
+    // refuse order
+    $('.remove').click(function () {
+
+        var id = $(this).data('id');
+        if(window.confirm("Are you sure to delete the employee?")) {
+            sendRequest(id, 'DELETE', 'employees');
+        }
+
+    });
+
+    /**
+     * send request to backend
+     * @param id
+     * @param method
+     * @param url
+     */
+    function sendRequest(id, method, url) {
+        $.ajax(url, {
+            type: method,  // http method
+            data: { id:  id},  // data to submit
+            success: function (data, status, xhr) {
+                console.log('success');
+                window.location.reload();
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                console.log(errorMessage);
+                window.location.reload();
+            }
+        });
+    }
+
+</script>
+</body>
+</html>

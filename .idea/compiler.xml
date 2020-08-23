@@ -14,6 +14,7 @@
         <module name="control" />
         <module name="discovery" />
         <module name="employees" />
+        <module name="employeeUI" />
         <module name="orders" />
         <module name="products" />
         <module name="test" />
@@ -28,6 +29,7 @@
       <module name="control" target="1.8" />
       <module name="discovery" target="1.8" />
       <module name="employees" target="1.8" />
+      <module name="employeeUI" target="1.8" />
       <module name="orders" target="1.8" />
       <module name="products" target="1.8" />
       <module name="test" target="1.8" />
@@ -42,6 +44,7 @@
       <module name="command" options="-parameters" />
       <module name="control" options="-parameters" />
       <module name="discovery" options="-parameters" />
+      <module name="employeeUI" options="-parameters" />
       <module name="employees" options="-parameters" />
       <module name="orders" options="-parameters" />
       <module name="products" options="-parameters" />
