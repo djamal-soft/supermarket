@@ -1,4 +1,4 @@
-package com.ntic.control.observerPattren;
+package com.ntic.control.controllers.observerPattren;
 
 import com.ntic.control.models.AwaitedItem;
 import com.ntic.control.models.Microservice;

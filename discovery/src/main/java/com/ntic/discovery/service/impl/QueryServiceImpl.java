@@ -16,7 +16,7 @@ public class QueryServiceImpl implements IQueryService {
     private MicroserviceRepository mRepository;
 
     @Override
-    public MsQueryDto getMs(String keys, float version) {
+    public Microservice getMs(String keys, float version) {
 
         Microservice microservice;
 
@@ -28,13 +28,14 @@ public class QueryServiceImpl implements IQueryService {
         }
 
         if(microservice != null) {
-            MsQueryDto msQueryDto = new MsQueryDto();
-            msQueryDto.setId(microservice.getId());
-            msQueryDto.setAddress(microservice.getAddress());
-            msQueryDto.setKeys(microservice.getMkeys());
-            msQueryDto.setVersion(microservice.getVersion());
-
-            return msQueryDto;
+//            MsQueryDto msQueryDto = new MsQueryDto();
+//            msQueryDto.setId(microservice.getId());
+//            msQueryDto.setAddress(microservice.getAddress());
+//            msQueryDto.setKeys(microservice.getMkeys());
+//            msQueryDto.setVersion(microservice.getVersion());
+//
+//            return msQueryDto;
+            return microservice;
         }
 
         // MS not fount

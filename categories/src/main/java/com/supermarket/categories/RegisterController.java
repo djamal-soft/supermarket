@@ -24,18 +24,21 @@ public class RegisterController {
         ms.setAddress(makeUrl(host, port, "categories"));
         ms.setMkeys("category-management");
         ms.setVersion(1);
+        ms.setName("categories");
         services.add(ms);
 
         ms = new Microservice();
         ms.setAddress(makeUrl(host, port, "categories-by-ids"));
         ms.setMkeys("categories-by-ids");
         ms.setVersion(1);
+        ms.setName("categories");
         services.add(ms);
 
         ms = new Microservice();
         ms.setAddress(makeUrl(host, port, "images"));
         ms.setMkeys("upload-category-image");
         ms.setVersion(1);
+        ms.setName("categories");
         services.add(ms);
 
         for (Microservice service : services) {

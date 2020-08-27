@@ -24,12 +24,14 @@ public class RegisterController {
         ms.setAddress(makeUrl(host, port, "clients"));
         ms.setMkeys("client-management");
         ms.setVersion(1);
+        ms.setName("clients");
         services.add(ms);
 
         ms = new Microservice();
         ms.setAddress(makeUrl(host, port, "clientbyemail"));
         ms.setMkeys("client-by-email");
         ms.setVersion(1);
+        ms.setName("clients");
         services.add(ms);
 
         for (Microservice service : services) {

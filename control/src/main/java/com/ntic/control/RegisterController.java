@@ -1,6 +1,6 @@
-package com.supermarket.products;
+package com.ntic.control;
 
-import com.supermarket.products.models.Microservice;
+import com.ntic.control.models.Microservice;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
@@ -20,31 +20,24 @@ public class RegisterController {
 
 
         Microservice ms = new Microservice();
-        ms.setAddress(makeUrl(host, port, "products"));
-        ms.setMkeys("product-management");
+        ms.setAddress(makeUrl(host, port, "error"));
+        ms.setMkeys("notify-error");
         ms.setVersion(1);
-        ms.setName("products");
+        ms.setName("control");
         services.add(ms);
 
         ms = new Microservice();
-        ms.setAddress(makeUrl(host, port, "products/search"));
-        ms.setMkeys("search-products");
+        ms.setAddress(makeUrl(host, port, "new-service"));
+        ms.setMkeys("service-duplicated");
         ms.setVersion(1);
-        ms.setName("products");
-        services.add(ms);
+        ms.setName("control");
 
-        ms = new Microservice();
-        ms.setAddress(makeUrl(host, port, "category/products"));
-        ms.setMkeys("category-products");
-        ms.setVersion(1);
-        ms.setName("products");
         services.add(ms);
-
         ms = new Microservice();
-        ms.setAddress(makeUrl(host, port, "images"));
-        ms.setMkeys("upload-product-image");
+        ms.setAddress(makeUrl(host, port, "duplicated"));
+        ms.setMkeys("duplicated");
         ms.setVersion(1);
-        ms.setName("products");
+        ms.setName("control");
         services.add(ms);
 
         for (Microservice service : services) {

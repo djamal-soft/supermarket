@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/clientUI/clientUI.iml" filepath="$PROJECT_DIR$/clientUI/clientUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/clients/clients.iml" filepath="$PROJECT_DIR$/clients/clients.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloning/cloning.iml" filepath="$PROJECT_DIR$/cloning/cloning.iml" />
-      <module fileurl="file://$PROJECT_DIR$/command/command.iml" filepath="$PROJECT_DIR$/command/command.iml" />
       <module fileurl="file://$PROJECT_DIR$/control/control.iml" filepath="$PROJECT_DIR$/control/control.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery/discovery.iml" filepath="$PROJECT_DIR$/discovery/discovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/employeeUI/employeeUI.iml" filepath="$PROJECT_DIR$/employeeUI/employeeUI.iml" />

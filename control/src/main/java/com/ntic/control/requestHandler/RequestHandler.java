@@ -1,7 +1,7 @@
-package com.supermarket.clientUI.proxies;
+package com.ntic.control.requestHandler;
 
-import com.supermarket.clientUI.models.Microservice;
-import com.supermarket.clientUI.models.Order;
+
+import com.ntic.control.models.Microservice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.stereotype.Service;
@@ -80,25 +80,17 @@ public class RequestHandler {
             response = sendRequest(microservice);
         }
         catch (Exception e) {
-            handleError();
-
+            System.out.println(e.getMessage());
+            microservice = handleError(microservice);
+            response = sendRequest(microservice);
         }
 
         return response;
     }
 
-    private void handleError() {
-        DiscoveryProxy discoveryProxy = new DiscoveryProxy();
-        Microservice microservice = discoveryProxy.getService(serviceKey, serviceVersion);
-        Microservice controleMicroservice = discoveryProxy.getService("notify-error", -1);
+    private Microservice handleError(Microservice microservice) {
 
-        HttpEntity<Microservice> request = new HttpEntity<>(microservice);
-
-        try {
-            rest.postForObject(controleMicroservice.getAddress(), request, Object.class);
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+        return null;
     }
 
     private Object sendRequest(Microservice microservice) {

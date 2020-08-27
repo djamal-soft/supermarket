@@ -1,8 +1,7 @@
-package com.ntic.control.observerPattren;
+package com.ntic.control.controllers.observerPattren;
 
 import com.ntic.control.models.AwaitedItem;
 import com.ntic.control.models.Microservice;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.web.client.RestTemplate;
 

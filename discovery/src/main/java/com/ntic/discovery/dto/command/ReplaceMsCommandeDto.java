@@ -4,6 +4,7 @@ package com.ntic.discovery.dto.command;
 public class ReplaceMsCommandeDto {
 
     private int id;
+    private String name;
     private String mkeys;
     private String address;
     private float version;
@@ -43,10 +44,19 @@ public class ReplaceMsCommandeDto {
         this.version = version;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
-        return "AddMsCommandDto{" +
+        return "ReplaceMsCommandeDto{" +
                 "id=" + id +
+                ", name='" + name + '\'' +
                 ", mkeys='" + mkeys + '\'' +
                 ", address='" + address + '\'' +
                 ", version=" + version +

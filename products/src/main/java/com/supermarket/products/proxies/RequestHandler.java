@@ -81,16 +81,24 @@ public class RequestHandler {
         }
         catch (Exception e) {
             System.out.println(e.getMessage());
-            microservice = handleError(microservice);
-            response = sendRequest(microservice);
+            handleError();
         }
 
         return response;
     }
 
-    private Microservice handleError(Microservice microservice) {
+    private void handleError() {
+        DiscoveryProxy discoveryProxy = new DiscoveryProxy();
+        Microservice microservice = discoveryProxy.getService(serviceKey, serviceVersion);
+        Microservice controleMicroservice = discoveryProxy.getService("notify-error", -1);
 
-        return null;
+        HttpEntity<Microservice> request = new HttpEntity<>(microservice);
+
+        try {
+            rest.postForObject(controleMicroservice.getAddress(), request, Object.class);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     private Object sendRequest(Microservice microservice) {

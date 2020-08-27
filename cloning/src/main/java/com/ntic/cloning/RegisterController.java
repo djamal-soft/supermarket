@@ -1,8 +1,7 @@
-package com.supermarket.employees;
+package com.ntic.cloning;
 
 
-
-import com.supermarket.employees.models.Microservice;
+import com.ntic.cloning.models.Microservice;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
@@ -22,25 +21,12 @@ public class RegisterController {
 
 
         Microservice ms = new Microservice();
-        ms.setAddress(makeUrl(host, port, "employees"));
-        ms.setMkeys("employee-management");
+        ms.setAddress(makeUrl(host, port, "new-instance"));
+        ms.setMkeys("duplicate-service");
         ms.setVersion(1);
-        ms.setName("employees");
+        ms.setName("cloning");
         services.add(ms);
 
-        ms = new Microservice();
-        ms.setAddress(makeUrl(host, port, "employee-by-email"));
-        ms.setMkeys("employee-by-email");
-        ms.setVersion(1);
-        ms.setName("employees");
-        services.add(ms);
-
-        ms = new Microservice();
-        ms.setAddress(makeUrl(host, port, "all-delivery-men"));
-        ms.setMkeys("all-delivery-men");
-        ms.setVersion(1);
-        ms.setName("employees");
-        services.add(ms);
 
 
         for (Microservice service : services) {

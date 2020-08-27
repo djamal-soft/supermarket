@@ -1,9 +1,8 @@
-package com.supermarket.products.proxies;
+package com.ntic.cloning.requestHandler;
 
 
-
-import com.supermarket.products.enums.Urls;
-import com.supermarket.products.models.Microservice;
+import com.ntic.cloning.enums.Urls;
+import com.ntic.cloning.models.Microservice;
 import org.springframework.web.client.RestTemplate;
 
 public class DiscoveryProxy {
@@ -22,8 +21,6 @@ public class DiscoveryProxy {
     public Microservice getService(String key, float version) {
 
         String url = Urls.DISCOVERY_URL + key + "/" + version;
-        Microservice microservice = rest.getForObject(url, Microservice.class);
-
-        return microservice;
+        return rest.getForObject(url, Microservice.class);
     }
 }

@@ -23,17 +23,21 @@ public class MsCommandController {
     @Autowired
     QueryServiceImpl queryService;
 
+    /**
+     *
+     * @param microservice
+     */
     @PostMapping(value = "register")
     @ResponseStatus(HttpStatus.CREATED)
     public void addMs(@RequestBody AddMsCommandDto microservice){
 
         try{
-            MsQueryDto ms = queryService.getMs(microservice.getMkeys(), microservice.getVersion());
-//            System.out.println("exist");
-//            //microservice.setId(ms.getId());
+            Microservice ms = queryService.getMs(microservice.getMkeys(), microservice.getVersion());
+
             ReplaceMsCommandeDto replaceDto = new ReplaceMsCommandeDto();
             replaceDto.setId(ms.getId());
             replaceDto.setAddress(microservice.getAddress());
+            replaceDto.setName(microservice.getName());
             replaceDto.setMkeys(microservice.getMkeys());
             replaceDto.setVersion(microservice.getVersion());
             commandService.replaceMs(replaceDto);
@@ -41,19 +45,12 @@ public class MsCommandController {
             // Store microservice
             commandService.addMs(microservice);
         }
-
-
-//        if(ms != null) {
-//
-//        }
-//        else {
-//            System.out.println("not exist");
-//
-//        }
-//        commandService.addMs(microservice);
-
     }
 
+    /**
+     * delete service
+     * @param id
+     */
     @DeleteMapping(value = "unregister/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteMs(@PathVariable("id") int id){
@@ -64,6 +61,10 @@ public class MsCommandController {
         commandService.deleteMs(deleteMsCommandDto);
     }
 
+    /**
+     *
+     * @param microservice
+     */
     @PutMapping(value = "replace")
     @ResponseStatus(HttpStatus.CREATED)
     public void replaceMs(@RequestBody ReplaceMsCommandeDto microservice){

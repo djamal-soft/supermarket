@@ -2,8 +2,9 @@ package com.ntic.discovery.service;
 
 
 import com.ntic.discovery.dto.query.MsQueryDto;
+import com.ntic.discovery.entity.Microservice;
 
 public interface IQueryService {
 
-    MsQueryDto getMs(String keys, float version);
+    Microservice getMs(String keys, float version);
 }

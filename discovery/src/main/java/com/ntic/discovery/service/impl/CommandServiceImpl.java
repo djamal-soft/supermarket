@@ -23,6 +23,7 @@ public class CommandServiceImpl implements ICommandService {
     public void addMs(AddMsCommandDto addMs) {
 
         Microservice microservice = new Microservice();
+        microservice.setName(addMs.getName());
         microservice.setAddress(addMs.getAddress());
         microservice.setMkeys(addMs.getMkeys());
         microservice.setVersion(addMs.getVersion());
@@ -49,6 +50,7 @@ public class CommandServiceImpl implements ICommandService {
         if(microservice == null)
             throw  new NotFoundException();
 
+        microservice.setName(replaceMs.getName());
         microservice.setAddress(replaceMs.getAddress());
         microservice.setMkeys(replaceMs.getMkeys());
         microservice.setVersion(replaceMs.getVersion());

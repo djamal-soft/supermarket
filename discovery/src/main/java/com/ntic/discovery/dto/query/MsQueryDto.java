@@ -3,6 +3,7 @@ package com.ntic.discovery.dto.query;
 public class MsQueryDto {
 
     private int id;
+    private String name;
     private String keys;
     private String address;
     private float version;
@@ -42,10 +43,19 @@ public class MsQueryDto {
         this.version = version;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
-        return "AddMsCommandDto{" +
+        return "MsQueryDto{" +
                 "id=" + id +
+                ", name='" + name + '\'' +
                 ", keys='" + keys + '\'' +
                 ", address='" + address + '\'' +
                 ", version=" + version +

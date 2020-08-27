@@ -1,6 +1,6 @@
-package com.supermarket.products;
+package com.ntic.discovery;
 
-import com.supermarket.products.models.Microservice;
+import com.ntic.discovery.entity.Microservice;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
@@ -20,36 +20,29 @@ public class RegisterController {
 
 
         Microservice ms = new Microservice();
-        ms.setAddress(makeUrl(host, port, "products"));
-        ms.setMkeys("product-management");
+        ms.setAddress(makeUrl(host, port, "register"));
+        ms.setMkeys("register-service");
         ms.setVersion(1);
-        ms.setName("products");
+        ms.setName("discovery");
         services.add(ms);
 
         ms = new Microservice();
-        ms.setAddress(makeUrl(host, port, "products/search"));
-        ms.setMkeys("search-products");
+        ms.setAddress(makeUrl(host, port, "unregister"));
+        ms.setMkeys("unregister-service");
         ms.setVersion(1);
-        ms.setName("products");
+        ms.setName("discovery");
         services.add(ms);
 
         ms = new Microservice();
-        ms.setAddress(makeUrl(host, port, "category/products"));
-        ms.setMkeys("category-products");
+        ms.setAddress(makeUrl(host, port, "replace"));
+        ms.setMkeys("replace-service");
         ms.setVersion(1);
-        ms.setName("products");
+        ms.setName("discovery");
         services.add(ms);
 
-        ms = new Microservice();
-        ms.setAddress(makeUrl(host, port, "images"));
-        ms.setMkeys("upload-product-image");
-        ms.setVersion(1);
-        ms.setName("products");
-        services.add(ms);
-
-        for (Microservice service : services) {
-            rest.postForLocation(DISCOVERY_URL,service);
-        }
+//        for (Microservice service : services) {
+//            rest.postForLocation(DISCOVERY_URL,service);
+//        }
     }
 
     private String makeUrl(String host, String port, String path) {

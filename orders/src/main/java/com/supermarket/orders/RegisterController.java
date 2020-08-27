@@ -24,30 +24,35 @@ public class RegisterController {
         ms.setAddress(makeUrl(host, port, "orders"));
         ms.setMkeys("order-management");
         ms.setVersion(1);
+        ms.setName("orders");
         services.add(ms);
 
         ms = new Microservice();
         ms.setAddress(makeUrl(host, port, "client-orders"));
         ms.setMkeys("client-orders");
         ms.setVersion(1);
+        ms.setName("orders");
         services.add(ms);
 
         ms = new Microservice();
         ms.setAddress(makeUrl(host, port, "delivery-man-orders"));
         ms.setMkeys("delivery-man-orders");
         ms.setVersion(1);
+        ms.setName("orders");
         services.add(ms);
 
         ms = new Microservice();
         ms.setAddress(makeUrl(host, port, "next-status"));
         ms.setMkeys("next-status");
         ms.setVersion(1);
+        ms.setName("orders");
         services.add(ms);
 
         ms = new Microservice();
         ms.setAddress(makeUrl(host, port, "refuse-order"));
         ms.setMkeys("refuse-order");
         ms.setVersion(1);
+        ms.setName("orders");
         services.add(ms);
 
         for (Microservice service : services) {
