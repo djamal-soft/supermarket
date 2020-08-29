@@ -27,8 +27,7 @@ public class AwaitedListController {
     }
 
     public void deleteMicroservice(Microservice microservice) {
-//        Iterator<Microservice> iterator = microservices.iterator();
-//        Microservice ms = null;
+
         for (Iterator<Microservice> iterator = microservices.iterator(); iterator.hasNext(); ) {
             Microservice ms = iterator.next();
             if (ms.getId() == microservice.getId()) {
@@ -36,12 +35,5 @@ public class AwaitedListController {
             }
         }
 
-//        if(microservices.size() < 1) return ;
-//
-//        for (Microservice ms: microservices) {
-//            if (microservice.getId() == ms.getId()) {
-//                microservices.remove(ms);
-//            }
-//        }
     }
 }

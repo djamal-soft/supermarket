@@ -34,39 +34,15 @@ public class MsCommandController {
     @ResponseStatus(HttpStatus.CREATED)
     public void addMs(@RequestBody AddMsCommandDto microservice){
 
-        if(microservice.getStatus() == null) microservice.setStatus(MicroserviceStatus.AVAILABLE);
+        if(microservice.getStatus() == null)
+            microservice.setStatus(MicroserviceStatus.AVAILABLE);
 
         try {
-            Microservice ms = queryService.getMs(microservice.getMkeys(), microservice.getVersion());
-            if (!ms.getAddress().equals(microservice.getAddress())) {
-                commandService.addMs(microservice);
-            }
-
+            commandService.addMs(microservice);
         } catch (Exception e) {
-            System.out.println(e.getMessage());
-            try {
-                commandService.addMs(microservice);
-            } catch (Exception e2) {
-                System.out.println(e2.getMessage());
-            }
+            e.printStackTrace();
         }
 
-//        try{
-//            Microservice ms = queryService.getMs(microservice.getMkeys(), microservice.getVersion(), microservice.getStatus());
-//
-//            ReplaceMsCommandeDto replaceDto = new ReplaceMsCommandeDto();
-//            replaceDto.setId(ms.getId());
-//            replaceDto.setAddress(microservice.getAddress());
-//            replaceDto.setName(microservice.getName());
-//            replaceDto.setMkeys(microservice.getMkeys());
-//            replaceDto.setVersion(microservice.getVersion());
-//            replaceDto.setStatus(MicroserviceStatus.AVAILABLE);
-//            commandService.replaceMs(replaceDto);
-//        } catch (Exception e) {
-//            // Store microservice
-//            microservice.setStatus(MicroserviceStatus.AVAILABLE);
-//            commandService.addMs(microservice);
-//        }
     }
 
     /**

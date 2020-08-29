@@ -22,8 +22,6 @@ public class FlowController {
         // if it is not in awaited list
         if(! awaitedListController.checkMicroserviceExist(brokenDown)) {
 
-            System.out.println("not in list");
-
             // add microservice to awaited list
             awaitedListController.addMicroservice(brokenDown);
 
@@ -76,12 +74,8 @@ public class FlowController {
      */
     @PostMapping(value = "duplicated")
     public void duplicated(@RequestBody Microservice brokenDown) {
-        System.out.println("duplicated");
-        System.out.println(AwaitedListController.microservices);
-        System.out.println(brokenDown);
-        System.out.println(awaitedListController.checkMicroserviceExist(brokenDown));
+
         awaitedListController.deleteMicroservice(brokenDown);
-        System.out.println(awaitedListController.checkMicroserviceExist(brokenDown));
     }
 
 }

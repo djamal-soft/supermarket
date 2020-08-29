@@ -57,9 +57,6 @@ public class CommandServiceImpl implements ICommandService {
         microservice.setVersion(replaceMs.getVersion());
         microservice.setStatus(replaceMs.getStatus());
 
-        System.out.println("start replace ms");
-        System.out.println(microservice);
-
         try {
             mRepository.save(microservice);
         }
