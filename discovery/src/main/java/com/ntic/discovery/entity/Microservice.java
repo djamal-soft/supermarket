@@ -3,7 +3,8 @@ package com.ntic.discovery.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "microservices", uniqueConstraints={@UniqueConstraint(columnNames = {"mkeys", "version"})})
+@Table(name = "microservices", uniqueConstraints={@UniqueConstraint(columnNames = {"address", "mkeys", "version", "status"})})
+//@Table(name = "microservices")
 public class Microservice {
 
     @Id
@@ -13,6 +14,7 @@ public class Microservice {
     private String mkeys;
     private String address;
     private float version;
+    private String status;
 
     public Microservice() {
     }
@@ -57,6 +59,14 @@ public class Microservice {
         this.name = name;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "Microservice{" +
@@ -65,6 +75,7 @@ public class Microservice {
                 ", mkeys='" + mkeys + '\'' +
                 ", address='" + address + '\'' +
                 ", version=" + version +
+                ", status='" + status + '\'' +
                 '}';
     }
 }

@@ -8,6 +8,7 @@ public class Microservice {
     private String mkeys;
     private String address;
     private float version;
+    private String status;
 
     public Microservice() {
     }
@@ -52,6 +53,14 @@ public class Microservice {
         this.name = name;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "Microservice{" +
@@ -60,6 +69,7 @@ public class Microservice {
                 ", mkeys='" + mkeys + '\'' +
                 ", address='" + address + '\'' +
                 ", version=" + version +
+                ", status='" + status + '\'' +
                 '}';
     }
 }

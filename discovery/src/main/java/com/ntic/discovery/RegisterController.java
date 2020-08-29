@@ -1,6 +1,7 @@
 package com.ntic.discovery;
 
 import com.ntic.discovery.entity.Microservice;
+import com.ntic.discovery.enums.MicroserviceStatus;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
@@ -20,17 +21,18 @@ public class RegisterController {
 
 
         Microservice ms = new Microservice();
-        ms.setAddress(makeUrl(host, port, "register"));
-        ms.setMkeys("register-service");
-        ms.setVersion(1);
-        ms.setName("discovery");
-        services.add(ms);
+//        ms.setAddress(makeUrl(host, port, "register"));
+//        ms.setMkeys("register-service");
+//        ms.setVersion(1);
+//        ms.setName("discovery");
+//        services.add(ms);
 
         ms = new Microservice();
         ms.setAddress(makeUrl(host, port, "unregister"));
         ms.setMkeys("unregister-service");
         ms.setVersion(1);
         ms.setName("discovery");
+        ms.setStatus(MicroserviceStatus.AVAILABLE);
         services.add(ms);
 
         ms = new Microservice();
@@ -38,11 +40,12 @@ public class RegisterController {
         ms.setMkeys("replace-service");
         ms.setVersion(1);
         ms.setName("discovery");
+        ms.setStatus(MicroserviceStatus.AVAILABLE);
         services.add(ms);
 
-//        for (Microservice service : services) {
-//            rest.postForLocation(DISCOVERY_URL,service);
-//        }
+        for (Microservice service : services) {
+            rest.postForLocation(DISCOVERY_URL,service);
+        }
     }
 
     private String makeUrl(String host, String port, String path) {

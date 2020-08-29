@@ -1,7 +1,8 @@
-package com.ntic.cloning.requestHandler;
+package com.ntic.discovery.requestHandler;
 
 
-import com.ntic.cloning.models.Microservice;
+
+import com.ntic.discovery.entity.Microservice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.stereotype.Service;
@@ -70,7 +71,7 @@ public class RequestHandler {
     public Object handle() {
         DiscoveryProxy discoveryProxy = new DiscoveryProxy();
         Microservice microservice = discoveryProxy.getService(serviceKey, serviceVersion);
-        System.out.println(microservice);
+
         if(additionnelParamsToUrl != null) {
             microservice.setAddress(microservice.getAddress() + "/" + additionnelParamsToUrl);
         }

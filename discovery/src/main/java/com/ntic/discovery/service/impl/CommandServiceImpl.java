@@ -27,6 +27,7 @@ public class CommandServiceImpl implements ICommandService {
         microservice.setAddress(addMs.getAddress());
         microservice.setMkeys(addMs.getMkeys());
         microservice.setVersion(addMs.getVersion());
+        microservice.setStatus(addMs.getStatus());
 
         mRepository.save(microservice);
     }
@@ -54,6 +55,10 @@ public class CommandServiceImpl implements ICommandService {
         microservice.setAddress(replaceMs.getAddress());
         microservice.setMkeys(replaceMs.getMkeys());
         microservice.setVersion(replaceMs.getVersion());
+        microservice.setStatus(replaceMs.getStatus());
+
+        System.out.println("start replace ms");
+        System.out.println(microservice);
 
         try {
             mRepository.save(microservice);

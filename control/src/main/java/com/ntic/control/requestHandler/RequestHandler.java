@@ -81,8 +81,8 @@ public class RequestHandler {
         }
         catch (Exception e) {
             System.out.println(e.getMessage());
-            microservice = handleError(microservice);
-            response = sendRequest(microservice);
+//            microservice = handleError(microservice);
+//            response = sendRequest(microservice);
         }
 
         return response;

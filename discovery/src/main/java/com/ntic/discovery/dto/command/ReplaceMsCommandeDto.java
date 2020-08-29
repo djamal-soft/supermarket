@@ -8,6 +8,7 @@ public class ReplaceMsCommandeDto {
     private String mkeys;
     private String address;
     private float version;
+    private String status;
 
     public ReplaceMsCommandeDto() {
     }
@@ -52,6 +53,14 @@ public class ReplaceMsCommandeDto {
         this.name = name;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "ReplaceMsCommandeDto{" +
@@ -60,6 +69,7 @@ public class ReplaceMsCommandeDto {
                 ", mkeys='" + mkeys + '\'' +
                 ", address='" + address + '\'' +
                 ", version=" + version +
+                ", status='" + status + '\'' +
                 '}';
     }
 }

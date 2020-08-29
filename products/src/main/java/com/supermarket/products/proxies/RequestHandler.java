@@ -1,6 +1,7 @@
 package com.supermarket.products.proxies;
 
 
+import com.supermarket.products.enums.MicroserviceStatus;
 import com.supermarket.products.models.Microservice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
@@ -70,6 +71,12 @@ public class RequestHandler {
     public Object handle() {
         DiscoveryProxy discoveryProxy = new DiscoveryProxy();
         Microservice microservice = discoveryProxy.getService(serviceKey, serviceVersion);
+
+        if( ! microservice.getStatus().equals(MicroserviceStatus.AVAILABLE)) {
+            handleError();
+            return null;
+        }
+
 
         if(additionnelParamsToUrl != null) {
             microservice.setAddress(microservice.getAddress() + "/" + additionnelParamsToUrl);

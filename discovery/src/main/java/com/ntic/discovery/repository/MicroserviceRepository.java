@@ -9,6 +9,10 @@ import org.springframework.stereotype.Repository;
 public interface MicroserviceRepository extends JpaRepository<Microservice, Integer> {
 
     Microservice findById(int id);
-    Microservice getTopByMkeysContainingOrderByVersionDesc(String mkeys);
-    Microservice getTopByMkeysContainingAndVersionOrderByVersionDesc(String mkeys, float version);
+    Microservice getTopByMkeysOrderByIdDesc(String mkeys);
+    Microservice getTopByMkeysAndVersionOrderByIdDesc(String mkeys, float version);
+
+    Microservice getTopByMkeysAndStatusOrderByIdDesc(String mkeys, String status);
+    Microservice getTopByMkeysAndVersionAndStatusOrderByIdDesc(String mkeys, float version, String status);
+
 }

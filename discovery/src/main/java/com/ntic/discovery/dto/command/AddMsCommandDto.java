@@ -8,6 +8,7 @@ public class AddMsCommandDto {
     private String mkeys;
     private String address;
     private float version;
+    private String status;
 
     public AddMsCommandDto() {
     }
@@ -52,6 +53,14 @@ public class AddMsCommandDto {
         this.name = name;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "AddMsCommandDto{" +
@@ -60,6 +69,7 @@ public class AddMsCommandDto {
                 ", mkeys='" + mkeys + '\'' +
                 ", address='" + address + '\'' +
                 ", version=" + version +
+                ", status='" + status + '\'' +
                 '}';
     }
 }
